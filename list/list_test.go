@@ -105,3 +105,13 @@ func TestNextPrev(t *testing.T) {
 		t.Errorf("wrong prev node, expected %+v and got %+v", Item1, prev)
 	}
 }
+func TestValue(t *testing.T) {
+	testList := &List{}
+	Item1 := &Item {
+		Value: 1,
+	}
+	testList.Append(Item1)
+	if val:= Item1.getValue(); val != 1 {
+		t.Errorf("wrong value of item, expected 1 and got %d",  val)
+	}
+}

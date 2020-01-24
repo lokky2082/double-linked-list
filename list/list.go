@@ -97,3 +97,8 @@ func(item *Item) Next() *Item {
 func(item *Item) Prev() *Item {
   return item.prev
 }
+// Value return Value node of item
+func(item *Item) getValue() (val interface{}) {
+	val = item.Value
+  return val
+}
